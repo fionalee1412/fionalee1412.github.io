@@ -128,7 +128,8 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 .outer {
-  max-width: 1220px;
+  max-width: 50%;
+  min-width: 700px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -179,13 +180,8 @@ body {
 .mobile-nav-on #wrap {
   left: 280px;
 }
-@media screen and (min-width: 768px) {
-  #main {
-    display: inline;
-    float: left;
-    width: 73.3333333333333%;
-    margin: 0 0.8333333333333%;
-  }
+#main {
+  width: 100%;
 }
 .article-date,
 .article-category-link,
@@ -390,7 +386,7 @@ body {
 .nav-icon,
 .main-nav-link {
   float: left;
-  color: #fff;
+  color: #383434;
   opacity: 0.6;
   text-decoration: none;
   text-shadow: 0 1px rgba(0,0,0,0.2);
