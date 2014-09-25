@@ -93,7 +93,7 @@
         <p><strong>一定要在git Bash下进行hexo的安装和一切操作</strong><br>我原来是在nodejs的命令行窗口进行的，前面的安装过程一切顺利，但是执行hexo deploy怎么都不成功，相当相当郁闷，谷歌上也搜不出来解决办法，后来换了git bash就行了，还要注意的是，_config配置要这样写：</p>
 <figure class="highlight scala"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line"> <span class="keyword">type</span>: github</div><div class="line"> repository: git<span class="annotation">@github</span>.com:你的github账号/你的github账号.github.io.git</div><div class="line"> branch: master</div></pre></td></tr></table></figure>
 
-<p>——————<br><strong>注意</strong><br>一定要安装markdown的格式来书写，否则解析的时候就会报错</p>
+<p>——————<br><strong>注意</strong><br>1、一定要安装markdown的格式来书写，否则解析的时候就会报错<br>2、每次deploy的时候会覆盖CNAME文件，所以在source文件夹下面建立一个CNAME文件，里面写上域名</p>
 
       
     </div>
@@ -105,6 +105,20 @@
   </div>
   
     
+<nav id="article-nav">
+  
+    <a href="/2014/09/25/why blog/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
   
 </article>
 
@@ -122,7 +136,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">September 2014</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">September 2014</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -132,6 +146,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2014/09/25/why blog/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2014/09/25/hexo-搭建经验/">折腾了半天，hexo搭建的一点点心得</a>
