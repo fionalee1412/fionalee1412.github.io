@@ -86,7 +86,7 @@
         <ol>
 <li>成功用U盘启动CDlinux<br>cdlinux 0.9.7.1 u盘启动制作方法，准备好，<br>cdlinux 0.9.7.1.iso镜像，<br>UltraISO工具，<br>grub4dos 0.4.4，<br>BOOTICE 0.9，<br>老毛桃PE，这个工具有个模拟启动，测试U盘启动成功与否，省的重启电脑。<br>建议直接复制文件名去百度下载，不同版本有差异，最新的不一定就好用，因为一开始我用最新的制作几次都不成功。<br>大致步骤基本都一样：<br>1.U盘格式化成fat32或fat，有些U盘没有fat，就默认为fat32，<br>2.把ISO改名为CDlinux.iso，然后用UltraISO把iso写入硬盘，模式为usb hdd+，<br>3.这时候U盘根盘符是大写CDLINUX，里面一个文件夹和一个文件，<br>4.把grub4dos 0.4.4这里面的grldr文件无后缀的，和menu.lst复制到U盘根目录，<br>5.用menu.lst记事本打开，里面全部删掉，把虚线中间的复制进去保存：<br>—————————-分割线不复制——————————<br>timeout 3<br>default 0<br>title CDLINUX 0.9.7.1<br>find —set-root /CDlinux/bzImage<br>kernel /CDlinux/bzImage CDL_DEV=LABEL=CDLINUX CDL_LANG=zh_CN.UTF-8 vga=788<br>initrd /CDlinux/initrd<br>boot<br>—————————-分割线不复制——————————<br>6.我后来试了下，这个title后面无论跟不跟版本号，无论cdlinux是否大小，都可以正常启动。<br>7.用这个BOOTICE 0.9（我WIN7 64位开始我用的最新版本的64的貌似不成功，用这个不分64位的反而成功了），选分区引导，选第2个GRUB4DOS，点安装，弹出的框框GRLDR默认不要动点确定，就行了。<br>8.安全删除下U盘，拔插下U盘，用老毛桃模拟U盘启动，看看能不能正常。<br>9.如果启动有出错，试试用老毛桃修复下mbr，模拟启动那里有修复。<br>10.正常情况，U盘本目录就4个文件。<br><img src="http://fionalovecat.qiniudn.com/fionalovecat54c6e6198618367afec9ac342c738bd4b21ce52b.jpg" alt="U盘目录"></li>
 </ol>
-<p>&lt;待续。。。&gt;</p>
+<p>亲测可用<br>现把文件共享出来<a href="http://pan.baidu.com/s/1hqnBNPq" target="_blank" rel="external">http://pan.baidu.com/s/1hqnBNPq</a></p>
 
       
     </div>
