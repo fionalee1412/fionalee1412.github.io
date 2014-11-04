@@ -62,6 +62,45 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-手机屏碎了" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/11/04/手机屏碎了/" class="article-date">
+  <time datetime="2014-11-04T07:19:51.000Z" itemprop="datePublished">Nov 4 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/11/04/手机屏碎了/">第一次摔碎手机屏，mark一下</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>上午不小心把手机摔了一下，当时还好好的，结果中午吃完饭之后，听到一声玻璃碎掉的声音，然后就亲眼目睹了玻璃慢慢碎掉的全过程，碎得还挺均匀的说，话说我的手机貌似都挺经得住摔的，我第一个手机到现在都还能用得好好的。其实这个手机也摔了好多次了，估计是有个抗摔次数，然后达到极限了。<br>总之，既然不打算换手机，就只能去修咯，在淘宝上找了一家还算靠谱的店，还好我在深圳，基本上卖这种屏幕的都是深圳这边的卖家，考虑到晚上过去不太安全，还是周日有空再去吧，顺便可以在科学馆那边吃点好吃点。<br>上周末找到一家好好吃的咖喱店，选的是超级辣，在现在有点冷的季节里真的是刚刚好呢，好温暖的说。<br>话说最近还真是不得闲呢，项目居然多了起来。<br>不过话说屏幕得周日才能去修，这几天的话，暂且先买个膜贴着吧，等屏幕修好了，我也得买个手机套，好像还是有点用的。</p>
+<hr>
+<p>最近食量貌似越来越大了，中午的饭一般都能全吃完，早餐也要吃好多，晚上也是，不过最近的锻炼强度也提高了很多，早上起来的时候居然能隐约看见马甲线了，估计做完第二阶段，马甲线也应该不远了吧。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <!--<a data-url="http://fionalovecat.com/2014/11/04/手机屏碎了/" data-id="8ezwbh0paostm6gq" class="article-share-link">Share</a>-->
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-备案审核通过了" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2014/11/03/备案审核通过了/" class="article-date">
@@ -407,46 +446,6 @@
     </div>
     <footer class="article-footer">
       <!--<a data-url="http://fionalovecat.com/2014/09/28/angularjs笔记(一)/" data-id="b8ok32poeyhv79zb" class="article-share-link">Share</a>-->
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-蹭网指南" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/09/26/蹭网指南/" class="article-date">
-  <time datetime="2014-09-26T03:27:24.000Z" itemprop="datePublished">Sep 26 2014</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/09/26/蹭网指南/">蹭网指南</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ol>
-<li>成功用U盘启动CDlinux<br>cdlinux 0.9.7.1 u盘启动制作方法，准备好，<br>cdlinux 0.9.7.1.iso镜像，<br>UltraISO工具，<br>grub4dos 0.4.4，<br>BOOTICE 0.9，<br>老毛桃PE，这个工具有个模拟启动，测试U盘启动成功与否，省的重启电脑。<br>建议直接复制文件名去百度下载，不同版本有差异，最新的不一定就好用，因为一开始我用最新的制作几次都不成功。<br>大致步骤基本都一样：<br>1.U盘格式化成fat32或fat，有些U盘没有fat，就默认为fat32，<br>2.把ISO改名为CDlinux.iso，然后用UltraISO把iso写入硬盘，模式为usb hdd+，<br>3.这时候U盘根盘符是大写CDLINUX，里面一个文件夹和一个文件，<br>4.把grub4dos 0.4.4这里面的grldr文件无后缀的，和menu.lst复制到U盘根目录，<br>5.用menu.lst记事本打开，里面全部删掉，把虚线中间的复制进去保存：<br>—————————-分割线不复制——————————<br>timeout 3<br>default 0<br>title CDLINUX 0.9.7.1<br>find —set-root /CDlinux/bzImage<br>kernel /CDlinux/bzImage CDL_DEV=LABEL=CDLINUX CDL_LANG=zh_CN.UTF-8 vga=788<br>initrd /CDlinux/initrd<br>boot<br>—————————-分割线不复制——————————<br>6.我后来试了下，这个title后面无论跟不跟版本号，无论cdlinux是否大小，都可以正常启动。<br>7.用这个BOOTICE 0.9（我WIN7 64位开始我用的最新版本的64的貌似不成功，用这个不分64位的反而成功了），选分区引导，选第2个GRUB4DOS，点安装，弹出的框框GRLDR默认不要动点确定，就行了。<br>8.安全删除下U盘，拔插下U盘，用老毛桃模拟U盘启动，看看能不能正常。<br>9.如果启动有出错，试试用老毛桃修复下mbr，模拟启动那里有修复。<br>10.正常情况，U盘本目录就4个文件。<br><img src="http://fionalovecat.qiniudn.com/fionalovecat54c6e6198618367afec9ac342c738bd4b21ce52b.jpg" alt="U盘目录"></li>
-</ol>
-<p>亲测可用<br>现把文件共享出来<a href="http://pan.baidu.com/s/1hqnBNPq" target="_blank" rel="external">http://pan.baidu.com/s/1hqnBNPq</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <!--<a data-url="http://fionalovecat.com/2014/09/26/蹭网指南/" data-id="utdbtmf1h82txtnc" class="article-share-link">Share</a>-->
       
       
     </footer>
