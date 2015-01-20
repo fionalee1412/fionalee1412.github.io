@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Archives | fiona的猫窝</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="fiona的猫窝">
+<meta property="og:url" content="http://fionalovecat.com/archives/page/3/">
+<meta property="og:site_name" content="fiona的猫窝">
+<meta property="og:description">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="fiona的猫窝">
+<meta name="twitter:description">
+
+  
+    <link rel="alternative" href="/atom.xml" title="fiona的猫窝" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header>
+  
+  <div id="header-outer" class="outer">
+    <!--<div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">fiona的猫窝</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">最后一次折腾的开始</a>
+        </h2>
+      
+    </div>-->
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+     
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://fionalovecat.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-hexo-搭建经验" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/09/25/hexo-搭建经验/" class="article-date">
+  <time datetime="2014-09-25T08:01:54.000Z" itemprop="datePublished">Sep 25 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/09/25/hexo-搭建经验/">折腾了半天，hexo搭建的一点点心得</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>一定要在git Bash下进行hexo的安装和一切操作</strong><br>我原来是在nodejs的命令行窗口进行的，前面的安装过程一切顺利，但是执行hexo deploy怎么都不成功，相当相当郁闷，谷歌上也搜不出来解决办法，后来换了git bash就行了，还要注意的是，_config配置要这样写：</p>
+<figure class="highlight scala"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line"> <span class="keyword">type</span>: github</div><div class="line"> repository: git<span class="annotation">@github</span>.com:你的github账号/你的github账号.github.io.git</div><div class="line"> branch: master</div></pre></td></tr></table></figure>
+
+<p>——————<br><strong>注意</strong><br>1、一定要安装markdown的格式来书写，否则解析的时候就会报错<br>2、每次deploy的时候会覆盖CNAME文件，所以在source文件夹下面建立一个CNAME文件，里面写上域名</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <!--<a data-url="http://fionalovecat.com/2014/09/25/hexo-搭建经验/" data-id="l7p49olzyi4ckm1g" class="article-share-link">Share</a>-->
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/archives/page/2/">&laquo; Prev</a><a class="page-number" href="/archives/">1</a><a class="page-number" href="/archives/page/2/">2</a><span class="page-number current">3</span>
+    </nav>
+  
+</section>
+       
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 fiona<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+
+  </div>
+</body>
+</html>
